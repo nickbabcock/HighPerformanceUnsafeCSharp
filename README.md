@@ -1,6 +1,6 @@
 # High Performance Unsafe C#
 
-First off, the title of the repo may be a repo.  High performance code and
+First off, the title of the repo may be a misnomer.  High performance code and
 unsafe C# code aren't a correlation (that I've found and demonstate in some
 instances).  Anyways, this repo houses code that tries to find the fastest way
 to accomplish a task (think microptimizations).  This often includes various
