@@ -186,7 +186,7 @@ namespace HighPerformanceUnsafeCSharp
         }
 
 
-
+        //Uses a stack allocated character buffer
         static unsafe void fixedStreamreader(string filePath, Action<string> callback)
         {
             char[] buffer = new char[BUFFER_SIZE];
@@ -220,6 +220,7 @@ namespace HighPerformanceUnsafeCSharp
             }
         }
 
+        //Uses only heap allocated arrays but traverses the using pointers.
         static unsafe void fixedStreamreader2(string filePath, Action<string> callback)
         {
             char[] buffer = new char[BUFFER_SIZE];
